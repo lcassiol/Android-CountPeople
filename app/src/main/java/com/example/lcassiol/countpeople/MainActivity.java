@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final TextView txtPessoas = (TextView) findViewById(R.id.txtPessoas);
+        final TextView txtHomem = (TextView) findViewById(R.id.txtHomem);
+        final TextView txtMulher = (TextView) findViewById(R.id.txtMulher);
 
         final Button btnHomem = (Button) findViewById(R.id.btnHomem);
         final Button btnMulher = (Button) findViewById(R.id.btnMulher);
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 numPessoas++;
                 numHomens++;
                 txtPessoas.setText("Total Pessoas : " + Integer.toString(numPessoas));
-                btnHomem.setText(Integer.toString(numHomens));
+                txtHomem.setText(Integer.toString(numHomens));
             }
         });
 
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 numPessoas++;
                 numMulheres++;
                 txtPessoas.setText("Total Pessoas : " + Integer.toString(numPessoas));
-                btnMulher.setText(Integer.toString(numMulheres));
+                txtMulher.setText(Integer.toString(numMulheres));
             }
         });
 
@@ -58,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 numMulheres=0;
                 numHomens=0;
                 txtPessoas.setText("Total Pessoas : " + Integer.toString(numPessoas));
-                btnMulher.setText(Integer.toString(numMulheres));
-                btnHomem.setText(Integer.toString(numHomens));
+                txtMulher.setText(Integer.toString(numMulheres));
+                txtHomem.setText(Integer.toString(numHomens));
             }
         });
     }
