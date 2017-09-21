@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    app:statusBarBackground="@android:color/background_light"
     tools:context="com.example.lcassiol.countpeople.SplashScreen">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:background="@color/colorAccent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="1dp">
 
     </android.support.design.widget.AppBarLayout>
 
